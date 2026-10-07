@@ -1,0 +1,26 @@
+.page-heading { padding: 160px 7.3% 75px; }
+.page-heading h1 { font-family: "Extenda 50 Mega"; font-size: clamp(80px,11vw,145px); line-height: 1; font-weight: 400; margin: 24px 0 30px; }
+.page-heading > p:not(.section-label) { max-width: 730px; font-size: 16px; line-height: 1.7; color: #d3d0ca; margin: 0 0 18px; }
+.insights-list { padding: 20px 7.3% 90px; }
+.insights-list h2 { font-family: "Extenda 50 Mega"; font-size: 64px; font-weight: 400; margin: 16px 0; }
+.insights-list > p, .substack-panel p { font-size: 14px; line-height: 1.7; }
+.insight-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; margin-top: 40px; }
+.insight-tile { display: flex; flex-direction: column; border: 1px solid #3c3c3c; border-radius: 18px; padding: 30px; color: var(--paper); text-decoration: none; background: #1b1b1b; transition: border-color .2s, translate .2s; }
+.insight-tile:first-child { grid-column: 1/-1; background: var(--paper); color: #202020; }
+.insight-tile:hover { border-color: var(--coral); translate: 0 -4px; }
+.insight-tile h3 { font-size: 25px; font-weight: 400; line-height: 1.35; margin: 10px 0 18px; }
+.insight-tile p { font-size: 14px; line-height: 1.7; margin: 0 0 16px; }
+.insight-tile .insight-meta { font-size: 12px; color: var(--coral); }
+.insight-link { margin-top: auto; padding-top: 18px; font-size: 13px; color: var(--coral); }
+.substack-panel { display: flex; gap: 40px; align-items: center; justify-content: space-between; border-top: 1px solid var(--coral); padding: 45px 0 0; margin-top: 60px; }
+.substack-panel a { flex-shrink: 0; color: var(--coral); text-decoration: none; font-size: 14px; }
+.contact-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 90px; padding: 0 7.3% 100px; }
+.contact-direct { display: flex; flex-direction: column; align-items: flex-start; gap: 28px; }
+.contact-email { color: var(--paper); text-decoration: none; font-size: 20px; }
+#contact-form { display: grid; gap: 12px; }
+#contact-form label { font-size: 14px; margin-top: 8px; }
+#contact-form input,#contact-form textarea { width: 100%; color: var(--paper); background: #202020; border: 1px solid #494949; border-radius: 10px; padding: 14px; font: inherit; font-size: 14px; }
+#contact-form :is(input,textarea):focus { outline: 2px solid var(--coral); outline-offset: 2px; }
+#contact-form button { justify-self: start; border: 0; border-radius: 999px; padding: 14px 24px; background: var(--coral); color: var(--paper); font: inherit; font-size: 14px; cursor: pointer; margin-top: 14px; }
+@media(max-width:700px) { .page-heading { padding-top: 160px; } .insight-grid,.contact-layout { grid-template-columns: 1fr; } .contact-layout { gap: 50px; } .substack-panel { flex-direction: column; align-items: flex-start; gap: 24px; } }
+@media(prefers-reduced-motion:reduce) { .insight-tile { transition: none; translate: none; } }

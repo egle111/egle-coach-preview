@@ -1,0 +1,42 @@
+.individuals-hero { padding-top: 145px; padding-bottom: 90px; }
+.individuals-hero .hero__content { max-width: 850px; }
+.individuals-hero .hero__intro { font-size: clamp(28px,4vw,52px); }
+.individuals-hero .hero__headline { font-size: clamp(80px,12vw,155px); line-height: .85; }
+.individuals-hero .hero__description { max-width: 690px; font-size: 16px; line-height: 1.7; margin-top: 22px; }
+.individuals-hero .hero__companies { margin-top: 28px; }
+.individuals-recognition, .individuals-offers { padding: 110px 7.3%; position: relative; }
+.individuals-recognition { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; border-top: 1px solid #373737; }
+.individuals-recognition h2, .individuals-offers > h2 { font-family: "Extenda 50 Mega"; font-size: clamp(54px,7vw,90px); line-height: 1; font-weight: 400; margin: 0; }
+.individuals-recognition h2 span { color: var(--coral); }
+.individuals-recognition__copy p { font-size: 16px; line-height: 1.7; margin: 0 0 22px; }
+.individuals-recognition__copy p:first-child span { color: var(--coral); }
+.individuals-offers { padding-top: 30px; }
+.individuals-offers > h2 { margin-bottom: 44px; }
+.individuals-offers__grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.individuals-offers article { display: flex; flex-direction: column; padding: 28px; border: 1px solid #454545; border-radius: 20px; background: #202020; }
+.individuals-offers article:nth-child(2) { background: var(--paper); color: #202020; }
+.individuals-offers article:nth-child(3) { border-color: var(--coral); }
+.individuals-offers h3 { font-size: 23px; font-weight: 400; line-height: 1.3; margin: 0 0 22px; }
+.individuals-offers p { font-size: 14px; line-height: 1.7; margin: 0 0 18px; }
+.individuals-offers .individuals-offers__meta { font-size: 12px; color: var(--coral); margin-bottom: 24px; }
+.individuals-offers a { margin-top: auto; padding-top: 22px; color: var(--coral); font-size: 14px; text-decoration: none; display: flex; justify-content: space-between; gap: 12px; }
+.individuals-offers a:hover { text-decoration: underline; }
+@media(max-width:800px) { .individuals-recognition { grid-template-columns: 1fr; gap: 36px; } .individuals-offers__grid { grid-template-columns: 1fr; } .individuals-recognition,.individuals-offers { padding: 70px 7%; } .individuals-hero .hero__description { font-size: 14px; } }
+
+.individuals-recognition, .individuals-offers { scroll-margin-top: 110px; }
+
+.individuals-offers .individuals-volunteer { margin-top: 20px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 40px; background: transparent; border-color: #454545; padding: 24px 28px; }
+.individuals-volunteer p { margin: 0; max-width: 700px; }
+.individuals-volunteer a { margin: 0; padding: 0; flex-shrink: 0; gap: 24px; }
+@media(max-width:700px) { .individuals-offers .individuals-volunteer { flex-direction: column; align-items: flex-start; gap: 22px; } }
+
+.individuals-volunteer { scroll-margin-top: 110px; }
+
+.individuals-recognition { border-top: 0; }
+.individuals-recognition__copy .about-egle__cta { margin-top: 8px; }
+
+.individuals-offers__grid > article { transition: border-color .25s, box-shadow .25s, translate .25s; }
+@media(hover:hover) { .individuals-offers__grid > article:hover { border-color: var(--coral); box-shadow: inset 0 0 0 1px var(--coral); translate: 0 -5px; } }
+.individuals-offers__grid > article:focus-within { border-color: var(--coral); box-shadow: inset 0 0 0 1px var(--coral); }
+.individuals-offers__grid > article.scroll-reveal { transition: opacity .75s ease, transform .75s cubic-bezier(.2,.7,.2,1), border-color .25s, box-shadow .25s, translate .25s; }
+@media(prefers-reduced-motion:reduce) { .individuals-offers__grid > article { transition: none !important; translate: none !important; } }
