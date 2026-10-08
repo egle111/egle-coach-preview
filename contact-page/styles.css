@@ -4,16 +4,28 @@
 .contact-heading > p:not(.section-label) { max-width: 830px; margin: 0 auto; font-size: clamp(28px,4.4vw,58px); line-height: 1.15; color: var(--paper); }
 .contact-heading > p span { color: var(--coral); }
 .contact-pills { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin: 32px 0 20px; }
-.contact-pills > a { display: inline-flex; align-items: center; border: 1px solid #474747; border-radius: 999px; padding: 12px 20px; font-size: 14px; color: var(--paper); text-decoration: none; }
+.contact-pills > a { display: inline-flex; align-items: center; border: 1px solid #474747; border-radius: 999px; padding: 12px 20px; font-size: 13px; color: var(--paper); text-decoration: none; }
 .contact-pills .about-egle__cta { border-color: var(--coral); margin: 0; }
 .contact-pills > a:hover { border-color: var(--coral); }
 .contact-heading .section-label { font-size: 11px; color: #aaa69e; }
 .contact-panel { max-width: 760px; margin: 10px auto 90px; padding: 36px; border: 1px solid #343434; border-radius: 24px; background: #11110f; position: relative; }
 .contact-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .contact-fields > div { display: grid; gap: 12px; }
-#contact-form label { font-size: 12px; color: #bdbbb5; }
+#contact-form label { font-size: 13px; color: #bdbbb5; }
 #contact-form input,#contact-form textarea { background: #0b0b0a; border-color: #383838; }
 #contact-form button { justify-self: stretch; display: block; margin-top: 18px; text-align: center; }
 @media(max-width:700px) { .contact-panel { margin: 12px 7% 60px; padding: 24px; } .contact-fields { grid-template-columns: 1fr; gap: 12px; } .contact-heading.hero { padding-top: 150px; } }
 
 .contact-heading .section-label { justify-content: center; text-align: center; }
+
+html, body { min-height: 100%; background: #030406; }
+#main-content { min-height: 100svh; display: flow-root; padding-bottom: 1px; }
+.contact-heading h1 { overflow-wrap: normal; }
+@media (max-width: 700px) { .contact-heading h1 { font-size: clamp(52px, 10vw, 70px); line-height: 1.05; } }
+
+.contact-heading > .contact-greeting { margin: 0 auto 20px; font-size: 13px; line-height: 1.5; color: var(--coral); }
+
+.contact-heading { --contact-heading-gap: 40px; }
+.contact-heading.hero > .contact-greeting { margin: 0 auto var(--contact-heading-gap); font-size: 13px; line-height: 1.5; color: var(--coral); }
+.contact-heading h1 { margin-bottom: var(--contact-heading-gap); }
+@media (max-width: 700px) { .contact-heading { --contact-heading-gap: 32px; } }

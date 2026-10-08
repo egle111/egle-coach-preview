@@ -1,0 +1,26 @@
+/* Shared typography roles for all five preview pages. */
+:root { --text-body: 13px; --text-label: 13px; --text-control: 13px; --text-title: 20px; }
+body { font-family: "Lexend Deca", sans-serif; font-size: 13px; }
+.hero .hero__description, .hero .hero__audience, .hero .hero__companies,
+.investment-card p, .investment-card li, .about-egle p, .about-egle figcaption,
+.about-egle__stat-label, .programme__alignment p, .programme__module p, .programme__module li,
+.delivery__option li, .delivery__intro p, .delivery__header .delivery__fit,
+.programme-overview__item h2, .programme-overview__item p, .programme-overview__duration,
+.programme-outcome .programme-overview__timing, .practice__panel p,
+.practice__tab > span, .faq__item p, .testimonial figcaption, .testimonial__source,
+.recommendation-card blockquote p, .recommendation-card figcaption, .recommendation-card figcaption span,
+.closing-contact__description, .closing-contact__location,
+.individuals-recognition__copy p, .individuals-offers p, .individuals-offers a,
+.long-about header > p, .long-about figcaption, .long-about__copy p, .long-about__copy ul, .about-facts,
+.long-about h1 .about-pronunciation, .page-heading > p:not(.section-label),
+.insight-tile p, .insight-meta, .insight-link, .substack-panel p, .substack-panel a,
+.contact-email, #contact-form label, #contact-form input, #contact-form textarea, #contact-form button,
+.section-label, .hero .section-label, .about-egle .section-label, .difference .section-label,
+.practice .section-label, .faq .section-label, .contact-heading .section-label,
+.site-nav, .site-nav__cta, .hero__cta, .about-egle__cta, .about-egle__story-link,
+.closing-contact__actions a, .contact-pills > a { font-size: 13px; }
+.programme-overview__duration em { font-size: inherit; }
+.investment-card h3, .programme__module h3, .programme__alignment h3,
+.delivery__option h3, .individuals-offers h3, .insight-tile h3,
+.practice__tab strong, .faq__item summary { font-size: 20px; line-height: 1.35; }
+.practice__panel h3, .long-about__copy h2 { font-size: 28px; line-height: 1.3; }

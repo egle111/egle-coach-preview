@@ -1,6 +1,14 @@
 (() => {
   const buttons = [...document.querySelectorAll('.practice__tab')];
   function select(index, focus = false) {
+    if (window.matchMedia('(max-width: 700px)').matches) {
+      const button = buttons[index];
+      const expanded = focus || button.getAttribute('aria-expanded') !== 'true';
+      button.setAttribute('aria-expanded', String(expanded));
+      document.getElementById(button.getAttribute('aria-controls')).hidden = !expanded;
+      if (focus) button.focus({ preventScroll: true });
+      return;
+    }
     buttons.forEach((button, i) => {
       button.setAttribute('aria-expanded', String(i === index));
       document.getElementById(button.getAttribute('aria-controls')).hidden = i !== index;
